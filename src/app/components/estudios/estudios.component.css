@@ -1,0 +1,39 @@
+h4{
+    color: white;
+}
+
+@media (max-width:1024px) {
+    div>div>div{
+        /* display: block!important; */
+        flex-direction: column!important;
+        width: 100%!important;
+    }
+    div>div>div>div{
+        /* display: block!important; */
+        flex-direction: row!important;
+        flex-wrap: wrap!important;
+    }
+
+    div>div>div>div>div{
+        transform: translateX(0%)!important;
+    }
+    h4{
+        text-align: center;
+    }
+}
+
+@media (max-width:380px) {
+    h4{
+        font-size: small;
+    }
+    p{
+        width: 100%!important;
+        font-size: x-small;
+        font-weight: 400;
+    }
+    div>div{
+        border-radius: 0%!important;
+        margin-top: 0px!important;
+        width: 100%!important;
+    }
+}
