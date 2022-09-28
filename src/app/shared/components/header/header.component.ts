@@ -9,6 +9,12 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
+  modalOpen = false;
+
+  openModal(){
+    this.modalOpen = true;
+  }
+
   ngOnInit(): void {
   }
 

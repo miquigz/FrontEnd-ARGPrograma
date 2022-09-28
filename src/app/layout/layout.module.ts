@@ -16,6 +16,7 @@ import { FooterComponent } from '../shared/components/footer/footer.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HabilidadesComponent } from './components/habilidades/habilidades.component';
 
+
 @NgModule({
   declarations: [
     LayoutComponent,
