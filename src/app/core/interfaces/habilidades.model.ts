@@ -6,4 +6,5 @@ export interface Habilidades {
     animacion:boolean;
     radio:number;
     tamTitulo:string;
+    tamUnidad:string;
 }

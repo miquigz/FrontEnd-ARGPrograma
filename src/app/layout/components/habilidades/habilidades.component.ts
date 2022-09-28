@@ -17,7 +17,8 @@ export class HabilidadesComponent implements OnInit, NgCircleProgressModule {
       duracionAnimacion: 1400,
       animacion:true,
       radio:100,
-      tamTitulo:''
+      tamTitulo:'34',
+      tamUnidad: '0'
     },
     {
       id:2,
@@ -26,7 +27,8 @@ export class HabilidadesComponent implements OnInit, NgCircleProgressModule {
       duracionAnimacion: 1400,
       animacion:true,
       radio:100,
-      tamTitulo:'24'
+      tamTitulo:'24',
+      tamUnidad: '0'
     },
     {
       id:3,
@@ -35,7 +37,8 @@ export class HabilidadesComponent implements OnInit, NgCircleProgressModule {
       duracionAnimacion: 1400,
       animacion:true,
       radio:100,
-      tamTitulo:''
+      tamTitulo:'34',
+      tamUnidad: '0'
     },
     {
       id:4,
@@ -44,7 +47,8 @@ export class HabilidadesComponent implements OnInit, NgCircleProgressModule {
       duracionAnimacion: 1400,
       animacion:true,
       radio:100,
-      tamTitulo:'29'
+      tamTitulo:'29',
+      tamUnidad: '0'
     },
     {
       id:5,
@@ -53,7 +57,8 @@ export class HabilidadesComponent implements OnInit, NgCircleProgressModule {
       duracionAnimacion: 1400,
       animacion:true,
       radio:100,
-      tamTitulo:''
+      tamTitulo:'34',
+      tamUnidad: '0'
     },
     {
       id:6,
@@ -62,7 +67,8 @@ export class HabilidadesComponent implements OnInit, NgCircleProgressModule {
       duracionAnimacion: 1400,
       animacion:true,
       radio:100,
-      tamTitulo:'30'
+      tamTitulo:'30',
+      tamUnidad: '0'
     },
     {
       id:7,
@@ -71,7 +77,8 @@ export class HabilidadesComponent implements OnInit, NgCircleProgressModule {
       duracionAnimacion: 1400,
       animacion:true,
       radio:100,
-      tamTitulo:''
+      tamTitulo:'34',
+      tamUnidad: '0'
     },
     {
       id:8,
@@ -80,7 +87,8 @@ export class HabilidadesComponent implements OnInit, NgCircleProgressModule {
       duracionAnimacion: 1400,
       animacion:true,
       radio:100,
-      tamTitulo:'27'
+      tamTitulo:'27',
+      tamUnidad: '0'
     },
     {
       id:9,
@@ -89,7 +97,8 @@ export class HabilidadesComponent implements OnInit, NgCircleProgressModule {
       duracionAnimacion: 1400,
       animacion:true,
       radio:100,
-      tamTitulo:''
+      tamTitulo:'34',
+      tamUnidad: '0'
     },
     {
       id:10,
@@ -98,7 +107,8 @@ export class HabilidadesComponent implements OnInit, NgCircleProgressModule {
       duracionAnimacion: 1400,
       animacion:true,
       radio:100,
-      tamTitulo:'27'
+      tamTitulo:'27',
+      tamUnidad: '0'
     },
     {
       id:11,
@@ -107,7 +117,8 @@ export class HabilidadesComponent implements OnInit, NgCircleProgressModule {
       duracionAnimacion: 1400,
       animacion:true,
       radio:100,
-      tamTitulo:''
+      tamTitulo:'34',
+      tamUnidad: '0'
     },
 
   ]

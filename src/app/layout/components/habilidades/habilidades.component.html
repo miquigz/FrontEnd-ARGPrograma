@@ -3,51 +3,70 @@
   <div class="d-flex justify-content-center">
     <h1 class="text-white">Habilidades</h1>
   </div>
-  <p>{{habilidades[0].porcentaje}}</p>
   <div class="d-flex flex-wrap justify-content-center">
+    <div *ngFor="let habi of habilidades; index as i">
     <circle-progress 
-    [percent]="habilidades[0].porcentaje" [title]="habilidades[0].titulo"
-    [radius]="100" [animation]="true"[animationDuration]="1400" [unitsFontSize]="'0'"></circle-progress>
+    [percent]="habilidades[i].porcentaje" [titleFontSize]="habilidades[i].tamTitulo" [title]="habilidades[i].titulo"
+    [radius]="habilidades[i].radio" [animation]="habilidades[i].animacion" [animationDuration]="habilidades[i].duracionAnimacion" 
+    [unitsFontSize]="habilidades[i].tamUnidad" ></circle-progress>
+  </div>
+  </div>
+  
+  <!-- <div class="d-flex flex-wrap justify-content-center">
+    <circle-progress 
+    [percent]="habilidades[0].porcentaje" [titleFontSize]="habilidades[0].tamTitulo" [title]="habilidades[0].titulo"
+    [radius]="habilidades[0].radio" [animation]="habilidades[0].animacion" [animationDuration]="habilidades[0].duracionAnimacion" 
+    [unitsFontSize]="habilidades[0].tamUnidad" ></circle-progress>
 
     <circle-progress 
-    [percent]="67" [titleFontSize]="'24'" [title]= "['TailWindCSS']" 
-    [radius]="100"[animation]="true"[animationDuration]="1400" [unitsFontSize]="'0'"></circle-progress>
+    [percent]="habilidades[1].porcentaje" [titleFontSize]="habilidades[1].tamTitulo" [title]="habilidades[1].titulo"
+    [radius]="habilidades[1].radio" [animation]="habilidades[1].animacion" [animationDuration]="habilidades[1].duracionAnimacion" 
+    [unitsFontSize]="habilidades[1].tamUnidad"></circle-progress>
 
     <circle-progress
-    [percent]="85" [title]= "['Sass']"
-    [radius]="100" [animation]="true"[animationDuration]="1400" [unitsFontSize]="'0'" ></circle-progress>
+    [percent]="habilidades[2].porcentaje" [titleFontSize]="habilidades[2].tamTitulo" [title]="habilidades[2].titulo"
+    [radius]="habilidades[2].radio" [animation]="habilidades[2].animacion" [animationDuration]="habilidades[2].duracionAnimacion" 
+    [unitsFontSize]="habilidades[2].tamUnidad"></circle-progress>
 
     <circle-progress 
-    [percent]="75" [titleFontSize]="'29'" [title]= "['JavaScript']"
-    [radius]="100"[animation]="true"[animationDuration]="1400" [unitsFontSize]="'0'"></circle-progress>
+    [percent]="habilidades[3].porcentaje" [titleFontSize]="habilidades[3].tamTitulo" [title]="habilidades[3].titulo"
+    [radius]="habilidades[3].radio" [animation]="habilidades[3].animacion" [animationDuration]="habilidades[3].duracionAnimacion" 
+    [unitsFontSize]="habilidades[3].tamUnidad"></circle-progress>
 
     <circle-progress 
-    [percent]="55" [title]= "['NodeJS']"
-    [radius]="100" [animation]="true" [animationDuration]="1400" [unitsFontSize]="'0'"></circle-progress>
+    [percent]="habilidades[4].porcentaje" [titleFontSize]="habilidades[4].tamTitulo" [title]="habilidades[4].titulo"
+    [radius]="habilidades[4].radio" [animation]="habilidades[4].animacion" [animationDuration]="habilidades[4].duracionAnimacion" 
+    [unitsFontSize]="habilidades[4].tamUnidad"></circle-progress>
 
     <circle-progress 
-    [percent]="45" [titleFontSize]="'30'" [title]= "['MongoDB']"
-    [radius]="100" [animation]="true" [animationDuration]="1400" [unitsFontSize]="'0'" ></circle-progress>
+    [percent]="habilidades[5].porcentaje" [titleFontSize]="habilidades[5].tamTitulo" [title]="habilidades[5].titulo"
+    [radius]="habilidades[5].radio" [animation]="habilidades[5].animacion" [animationDuration]="habilidades[5].duracionAnimacion" 
+    [unitsFontSize]="habilidades[5].tamUnidad"></circle-progress>
 
     <circle-progress 
-    [percent]="45" [title]="['Angular']"
-    [radius]="100"[animation]="true"[animationDuration]="1400" [unitsFontSize]="'0'"></circle-progress>
+    [percent]="habilidades[6].porcentaje" [titleFontSize]="habilidades[6].tamTitulo" [title]="habilidades[6].titulo"
+    [radius]="habilidades[6].radio" [animation]="habilidades[6].animacion" [animationDuration]="habilidades[6].duracionAnimacion" 
+    [unitsFontSize]="habilidades[6].tamUnidad"></circle-progress>
 
     <circle-progress
-    [percent]="56" [titleFontSize]="'27'" [title]="['BootStrap']"
-    [radius]="100"[animation]="true"[animationDuration]="1400" [unitsFontSize]="'0'"></circle-progress>
+    [percent]="habilidades[7].porcentaje" [titleFontSize]="habilidades[7].tamTitulo" [title]="habilidades[7].titulo"
+    [radius]="habilidades[7].radio" [animation]="habilidades[7].animacion" [animationDuration]="habilidades[7].duracionAnimacion" 
+    [unitsFontSize]="habilidades[7].tamUnidad"></circle-progress>
 
     <circle-progress 
-    [percent]="45"[title]="['Java']"
-    [radius]="100"[animation]="true"[animationDuration]="1400" [unitsFontSize]="'0'"></circle-progress>
+    [percent]="habilidades[8].porcentaje" [titleFontSize]="habilidades[8].tamTitulo" [title]="habilidades[8].titulo"
+    [radius]="habilidades[8].radio" [animation]="habilidades[8].animacion" [animationDuration]="habilidades[8].duracionAnimacion" 
+    [unitsFontSize]="habilidades[8].tamUnidad"></circle-progress>
     
     <circle-progress
-    [percent]="55" [titleFontSize]="'27'" [title]= "['Springboot']"
-    [radius]="100"[animation]="true"[animationDuration]="1400"  [unitsFontSize]="'0'"></circle-progress>
+    [percent]="habilidades[9].porcentaje" [titleFontSize]="habilidades[9].tamTitulo" [title]="habilidades[9].titulo"
+    [radius]="habilidades[9].radio" [animation]="habilidades[9].animacion" [animationDuration]="habilidades[9].duracionAnimacion" 
+    [unitsFontSize]="habilidades[9].tamUnidad"></circle-progress>
 
     <circle-progress 
-    [percent]="85"[title]= "['CSS']"
-    [radius]="100"[animation]="true"[animationDuration]="1400" [unitsFontSize]="'0'"></circle-progress>
-  </div>
+    [percent]="habilidades[10].porcentaje" [titleFontSize]="habilidades[10].tamTitulo" [title]="habilidades[10].titulo"
+    [radius]="habilidades[10].radio" [animation]="habilidades[10].animacion" [animationDuration]="habilidades[10].duracionAnimacion" 
+    [unitsFontSize]="habilidades[10].tamUnidad"></circle-progress>
+  </div> -->
   
 </div>
