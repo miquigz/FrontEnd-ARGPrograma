@@ -1,0 +1,53 @@
+<div class="bg-dark">
+  <p>habilidades works!</p>
+  <div class="d-flex justify-content-center">
+    <h1 class="text-white">Habilidades</h1>
+  </div>
+  <p>{{habilidades[0].porcentaje}}</p>
+  <div class="d-flex flex-wrap justify-content-center">
+    <circle-progress 
+    [percent]="habilidades[0].porcentaje" [title]="habilidades[0].titulo"
+    [radius]="100" [animation]="true"[animationDuration]="1400" [unitsFontSize]="'0'"></circle-progress>
+
+    <circle-progress 
+    [percent]="67" [titleFontSize]="'24'" [title]= "['TailWindCSS']" 
+    [radius]="100"[animation]="true"[animationDuration]="1400" [unitsFontSize]="'0'"></circle-progress>
+
+    <circle-progress
+    [percent]="85" [title]= "['Sass']"
+    [radius]="100" [animation]="true"[animationDuration]="1400" [unitsFontSize]="'0'" ></circle-progress>
+
+    <circle-progress 
+    [percent]="75" [titleFontSize]="'29'" [title]= "['JavaScript']"
+    [radius]="100"[animation]="true"[animationDuration]="1400" [unitsFontSize]="'0'"></circle-progress>
+
+    <circle-progress 
+    [percent]="55" [title]= "['NodeJS']"
+    [radius]="100" [animation]="true" [animationDuration]="1400" [unitsFontSize]="'0'"></circle-progress>
+
+    <circle-progress 
+    [percent]="45" [titleFontSize]="'30'" [title]= "['MongoDB']"
+    [radius]="100" [animation]="true" [animationDuration]="1400" [unitsFontSize]="'0'" ></circle-progress>
+
+    <circle-progress 
+    [percent]="45" [title]="['Angular']"
+    [radius]="100"[animation]="true"[animationDuration]="1400" [unitsFontSize]="'0'"></circle-progress>
+
+    <circle-progress
+    [percent]="56" [titleFontSize]="'27'" [title]="['BootStrap']"
+    [radius]="100"[animation]="true"[animationDuration]="1400" [unitsFontSize]="'0'"></circle-progress>
+
+    <circle-progress 
+    [percent]="45"[title]="['Java']"
+    [radius]="100"[animation]="true"[animationDuration]="1400" [unitsFontSize]="'0'"></circle-progress>
+    
+    <circle-progress
+    [percent]="55" [titleFontSize]="'27'" [title]= "['Springboot']"
+    [radius]="100"[animation]="true"[animationDuration]="1400"  [unitsFontSize]="'0'"></circle-progress>
+
+    <circle-progress 
+    [percent]="85"[title]= "['CSS']"
+    [radius]="100"[animation]="true"[animationDuration]="1400" [unitsFontSize]="'0'"></circle-progress>
+  </div>
+  
+</div>
