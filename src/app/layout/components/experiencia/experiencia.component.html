@@ -1,14 +1,22 @@
 <div class="bg-secondary py-5">
     <div class=" rounded-4 w-75 bg-dark d-flex flex-column container-fluid align-items-center mt-5">
         <h2 class="bg-colorPort1 bg-opacity-75 px-2 rounded-2 position-relative translate-middle-y mb-4 text-white">Experiencia Laboral:</h2>
-        <div class="container-fluid w-75 d-flex bg-colorPort1 rounded-3 my-1 py-4">
-            <h4 class="text-wrap">ANIOS</h4>
+        <!-- <div class="container-fluid w-75 d-flex bg-colorPort1 rounded-3 my-1 py-4">
+            <h4 class="text-wrap text-white">2022</h4>
             <div class="flex-wrap d-flex container-fluid bg-colorPort2 rounded-2 p-2 w-75">                    
-                <p class="px-4 w-75 text-white">Trabajo 1</p>
+                <p class="px-4 w-75 text-white">Aun no poseo experiencia laboral</p>
+                <div class="px-4 container-fluid w-25 align-self-center"></div>
+            </div>
+        </div> -->
+        <div *ngFor="let exp of expLaboral; index as i"
+        class="container-fluid w-75 d-flex bg-colorPort1 rounded-3 my-1 py-4">
+            <h4 class="text-wrap text-white">{{expLaboral[i].anio}}</h4>
+            <div class="flex-wrap d-flex container-fluid bg-colorPort2 rounded-2 p-2 w-75">                    
+                <p class="px-4 w-75 text-white">{{expLaboral[i].desc}}</p>
                 <div class="px-4 container-fluid w-25 align-self-center"></div>
             </div>
         </div>
-        <div class="container-fluid w-75 d-flex bg-colorPort1 rounded-3 my-1 py-4">
+        <!-- <div class="container-fluid w-75 d-flex bg-colorPort1 rounded-3 my-1 py-4">
             <h4 class="text-wrap">ANIOS</h4>
             <div class="flex-wrap d-flex container-fluid bg-colorPort2 rounded-2 p-2 w-75">                    
                 <p class="px-4 w-75 text-white">Trabajo 2</p>
@@ -21,6 +29,6 @@
                 <p class="px-4 w-75 text-white">Trabajo 3</p>
                 <div class="px-4 container-fluid w-25 align-self-center"></div>
             </div>
-        </div>
+        </div> -->
     </div>  
 </div>
