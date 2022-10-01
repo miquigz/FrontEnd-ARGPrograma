@@ -1,0 +1,11 @@
+image{
+    filter: brightness(0.2) !important;
+    filter: blur(0.2);
+    background-color: black;
+}
+
+#cuatro > svg > image{
+    filter: brightness(0.2) !important;
+    filter: sepia(1);
+    background-color: black;
+}

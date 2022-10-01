@@ -1,22 +1,70 @@
 <div class="bg-dark">
   <p>habilidades works!</p>
   <div class="d-flex justify-content-center">
-    <h1 class="text-white">Habilidades</h1>
+    <h2 class="text-white">Habilidades Front-End</h2>
   </div>
-  <div class="d-flex flex-wrap justify-content-center">
-    <div *ngFor="let habi of habilidades; index as i">
-    <circle-progress 
-    [percent]="habilidades[i].porcentaje" [titleFontSize]="habilidades[i].tamTitulo" [title]="habilidades[i].titulo"
-    [radius]="habilidades[i].radio" [animation]="habilidades[i].animacion" [animationDuration]="habilidades[i].duracionAnimacion" 
-    [unitsFontSize]="habilidades[i].tamUnidad" ></circle-progress>
+  <div>
+    <div class="d-flex flex-wrap justify-content-center">
+      <div *ngFor="let habi of habilidadesFront">
+        <circle-progress 
+        [percent]="habi.porcentaje" [titleFontSize]="habi.tamTitulo" [title]="habi.titulo"
+        [showImage]="habi.mostrarImg" imageSrc="{{habi.imgSrc}}"
+        [imageHeight]="habi.altoImg" [imageWidth]="habi.anchoImg"
+        [radius]="habi.radio" [animation]="habi.animacion" [animationDuration]="habi.duracionAnimacion" 
+        [unitsFontSize]="habi.tamUnidad" ></circle-progress>
+      </div>
+    </div>
   </div>
+  <div class="d-flex justify-content-center">
+    <h2 class="text-white">Habilidades Back-End</h2>
   </div>
-  
-  <!-- <div class="d-flex flex-wrap justify-content-center">
-    <circle-progress 
+  <div>
+    <div class="d-flex flex-wrap justify-content-center">
+      <div *ngFor="let habi of habilidadesBack">
+        <circle-progress 
+        [percent]="habi.porcentaje" [titleFontSize]="habi.tamTitulo" [title]="habi.titulo"
+        [showImage]="habi.mostrarImg" imageSrc="{{habi.imgSrc}}"
+        [imageHeight]="habi.altoImg" [imageWidth]="habi.anchoImg"
+        [radius]="habi.radio" [animation]="habi.animacion" [animationDuration]="habi.duracionAnimacion" 
+        [unitsFontSize]="habi.tamUnidad" ></circle-progress>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center">
+    <h2 class="text-white h2">Herramientas y Habilidades Blandas</h2>
+  </div>
+  <div>
+    <div class="d-flex flex-wrap justify-content-center">
+      <div *ngFor="let habi of toolsAndSoftSkills">
+        <circle-progress 
+        [percent]="habi.porcentaje" [titleFontSize]="habi.tamTitulo" [title]="habi.titulo"
+        [showImage]="habi.mostrarImg" imageSrc="{{habi.imgSrc}}"
+        [imageHeight]="habi.altoImg" [imageWidth]="habi.anchoImg"
+        [radius]="habi.radio" [animation]="habi.animacion" [animationDuration]="habi.duracionAnimacion" 
+        [unitsFontSize]="habi.tamUnidad" ></circle-progress>
+      </div>
+    </div>
+  </div>
+
+  <!-- <button type="button" class="btn btn-secondary"
+        data-bs-toggle="popover" data-bs-placement="right"
+        data-bs-custom-class="custom-popover"
+        data-bs-title="Custom popover"
+        data-bs-content="This popover is themed via CSS variables.">
+    <circle-progress
+        
     [percent]="habilidades[0].porcentaje" [titleFontSize]="habilidades[0].tamTitulo" [title]="habilidades[0].titulo"
     [radius]="habilidades[0].radio" [animation]="habilidades[0].animacion" [animationDuration]="habilidades[0].duracionAnimacion" 
     [unitsFontSize]="habilidades[0].tamUnidad" ></circle-progress>
+  </button>
+
+  <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover">
+    <button class="btn btn-primary" type="button" disabled>Disabled button</button>
+  </span>
+   -->
+  <!-- <div class="d-flex flex-wrap justify-content-center">
+    
 
     <circle-progress 
     [percent]="habilidades[1].porcentaje" [titleFontSize]="habilidades[1].tamTitulo" [title]="habilidades[1].titulo"

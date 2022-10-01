@@ -7,4 +7,8 @@ export interface Habilidades {
     radio:number;
     tamTitulo:string;
     tamUnidad:string;
+    mostrarImg:boolean;
+    altoImg:number;
+    anchoImg:number;
+    imgSrc:string;
 }
